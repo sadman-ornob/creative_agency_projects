@@ -1,0 +1,115 @@
+/* Reset Basic Elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+/* Header & Container */
+.header {
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* Navbar Flex Layout */
+.navbar {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo Styling */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.logo-img {
+  height: 35px; /* Apnar logo-er size onujayi height adjust kore nite paren */
+  width: auto;
+}
+
+.logo-text {
+  font-size: 22px;
+  font-weight: 700;
+  color: #111111;
+}
+
+/* Navigation Links Alignment */
+.nav-links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 36px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  color: #222222;
+  transition: color 0.3s ease;
+  position: relative;
+  padding-bottom: 4px;
+}
+
+/* Active Link State */
+.nav-links li a.active {
+  color: #5B51D8;
+}
+
+/* Menu Hover Effect & Underline Animation */
+.nav-links li a:hover {
+  color: #5B51D8;
+}
+
+.nav-links li a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #5B51D8;
+  transition: width 0.3s ease;
+}
+
+.nav-links li a:hover::after,
+.nav-links li a.active::after {
+  width: 100%;
+}
+
+/* Contact Us Button Styling */
+.btn-primary {
+  display: inline-block;
+  background-color: #5B51D8;
+  color: #ffffff;
+  padding: 12px 28px;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 12px rgba(91, 81, 216, 0.2);
+}
+
+.btn-primary:hover {
+  background-color: #483ebc;
+  transform: translateY(-1px);
+  box-shadow: 0px 6px 16px rgba(91, 81, 216, 0.3);
+}
